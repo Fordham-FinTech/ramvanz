@@ -4,8 +4,7 @@
 // Copyright © 2017 Jake Cadez. All rights reserved.
 
 import UIKit
-//import AVFoundation
-// ^ for camera integrations 
+
 
 class FirstViewController: UIViewController {
     
