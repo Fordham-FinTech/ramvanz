@@ -1,6 +1,6 @@
 // SecondViewController.swift
 // Fordham_Coin
-// Created by Jake Cadez - Fordham FinTech Network
+// Created by Jake Cadez - Fordham Coin LLC
 // Copyright © 2017 Jake Cadez. All rights reserved.
 
 import UIKit
@@ -18,6 +18,9 @@ class SettingViewController: UITableViewController {
     @IBAction func swipeback_down(_ sender: UISwipeGestureRecognizer) {
         self.performSegue(withIdentifier: "SegueHome_D", sender: self)
     }
+    
+    // There is no outlet here for the return gesture recognizer 
+    // Make sure this is not the the compile isssue
 
     var profiledata_array = [profile_data]()
     
@@ -51,6 +54,8 @@ class SettingViewController: UITableViewController {
             let cell = Bundle.main.loadNibNamed("TableViewCell1", owner: self, options: nil)?.first as! TableViewCell1
             
             cell.Profile_Image.image = profiledata_array[indexPath.row].image
+            // Ensure the linking 
+            
             cell.Username.text = profiledata_array[indexPath.row].text
             cell.Name.text = profiledata_array[indexPath.row].text
             cell.Email.text = profiledata_array[indexPath.row].text

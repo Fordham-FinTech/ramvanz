@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		231B749C1E412ACE00676C48 /* TableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231B749A1E412ACD00676C48 /* TableViewCell1.swift */; };
 		231B749D1E412ACE00676C48 /* TableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 231B749B1E412ACD00676C48 /* TableViewCell1.xib */; };
+		233F7AA01E4BCF4100356DFB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233F7A9F1E4BCF4100356DFB /* CameraViewController.swift */; };
+		233F7AA21E4BE6E200356DFB /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233F7AA11E4BE6E200356DFB /* MenuBar.swift */; };
 		238CE7671E32839600306D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238CE7661E32839600306D0F /* AppDelegate.swift */; };
 		238CE7691E32839600306D0F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238CE7681E32839600306D0F /* FirstViewController.swift */; };
 		238CE76B1E32839700306D0F /* Setting_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238CE76A1E32839700306D0F /* Setting_Controller.swift */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		231B749A1E412ACD00676C48 /* TableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell1.swift; sourceTree = "<group>"; };
 		231B749B1E412ACD00676C48 /* TableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell1.xib; sourceTree = "<group>"; };
+		233F7A9F1E4BCF4100356DFB /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		233F7AA11E4BE6E200356DFB /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		238CE7631E32839500306D0F /* Fordham Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fordham Coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		238CE7661E32839600306D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		238CE7681E32839600306D0F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				238CE76A1E32839700306D0F /* Setting_Controller.swift */,
+				233F7A9F1E4BCF4100356DFB /* CameraViewController.swift */,
 				231B749A1E412ACD00676C48 /* TableViewCell1.swift */,
 				231B749B1E412ACD00676C48 /* TableViewCell1.xib */,
 			);
@@ -115,10 +120,11 @@
 			children = (
 				238CE7661E32839600306D0F /* AppDelegate.swift */,
 				238CE7681E32839600306D0F /* FirstViewController.swift */,
+				233F7AA11E4BE6E200356DFB /* MenuBar.swift */,
 				231B749E1E412AE500676C48 /* Settings */,
 				238CE76C1E32839A00306D0F /* Main.storyboard */,
-				238CE76F1E3283AB00306D0F /* Assets.xcassets */,
 				238CE7711E3283AD00306D0F /* LaunchScreen.storyboard */,
+				238CE76F1E3283AB00306D0F /* Assets.xcassets */,
 				238CE7741E3283B100306D0F /* Info.plist */,
 			);
 			path = Fordham_Coin;
@@ -279,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				238CE76B1E32839700306D0F /* Setting_Controller.swift in Sources */,
+				233F7AA01E4BCF4100356DFB /* CameraViewController.swift in Sources */,
+				233F7AA21E4BE6E200356DFB /* MenuBar.swift in Sources */,
 				238CE7671E32839600306D0F /* AppDelegate.swift in Sources */,
 				238CE7691E32839600306D0F /* FirstViewController.swift in Sources */,
 				231B749C1E412ACE00676C48 /* TableViewCell1.swift in Sources */,

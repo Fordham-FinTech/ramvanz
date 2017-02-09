@@ -97,17 +97,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 Million" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaI-65-UQ7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaI-65-UQ7">
                                 <rect key="frame" x="257" y="200" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to your wallet, Jake C." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFN-pZ-vMD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the Fordham wallet, Jake C." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFN-pZ-vMD">
                                 <rect key="frame" x="0.0" y="112" width="375" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -201,7 +201,7 @@
         <!--QR Scanner-->
         <scene sceneID="Rkw-nb-aPj">
             <objects>
-                <viewController title="QR Scanner" id="e22-5F-T5k" customClass="FirstViewController" customModule="Fordham_Coin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="QR Scanner" id="e22-5F-T5k" customClass="CameraViewController" customModule="Fordham_Coin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="12j-r7-mhK"/>
                         <viewControllerLayoutGuide type="bottom" id="sUy-sm-SIP"/>
@@ -217,8 +217,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Yr-Pv-uMM">
-                                <rect key="frame" x="16" y="120" width="343" height="361"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8dG-JX-YPJ">
+                                <rect key="frame" x="0.0" y="57" width="375" height="610"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -230,7 +230,7 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="cameraView" destination="6Yr-Pv-uMM" id="NzP-YS-ATv"/>
+                        <outlet property="CameraView" destination="8dG-JX-YPJ" id="Hdr-lQ-YHY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEs-oR-1xV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -381,7 +381,7 @@
         <image name="Favicon Coin II" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9pA-Uc-15b"/>
+        <segue reference="IO0-R3-eoL"/>
         <segue reference="H8y-W8-6P6"/>
     </inferredMetricsTieBreakers>
 </document>

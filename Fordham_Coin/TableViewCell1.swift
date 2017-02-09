@@ -1,10 +1,7 @@
-//
-//  TableViewCell1.swift
-//  Fordham_Coin
-//
-//  Created by Jake Cadez on 1/31/17.
-//  Copyright © 2017 Jake Cadez. All rights reserved.
-//
+// TableViewCell1.swift --> profile table
+// Fordham_Coin
+// Created by Jake Cadez - Fordham Coin LLC
+// Copyright © 2017 Jake Cadez. All rights reserved.
 
 import UIKit
 

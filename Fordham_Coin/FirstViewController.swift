@@ -1,10 +1,11 @@
 // FirstViewController.swift
 // Fordham_Coin
-// Created by Jake Cadez - Fordham FinTech Network
+// Created by Jake Cadez - Fordham Coin LLC
 // Copyright © 2017 Jake Cadez. All rights reserved.
 
 import UIKit
-import AVFoundation
+//import AVFoundation
+// ^ for camera integrations 
 
 class FirstViewController: UIViewController {
     
@@ -39,58 +40,31 @@ class FirstViewController: UIViewController {
         self.performSegue(withIdentifier: "SegueHome_U", sender: self)
     }
     
-    // Camera Variables
     
-    /*
-    @IBOutlet weak var cameraView: UIView!
-    var captureSession = AVCaptureSession()
-    var sessionOutput = AVCaptureStillImageOutput()
-    var previewLayer = AVCaptureVideoPreviewLayer()
+    // Remove outlets for swipe up and ensure that the connects are not empty 
+    // Problem with compiling occurs due to the settings viewcontroller -- fix asap!
     
-    */
- 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        /*
-        
-        // Accessing Camera
-        let deviceDiscoverySession = AVCaptureDeviceDiscoverySession.init(deviceTypes: [AVCaptureDeviceType.builtInDuoCamera, AVCaptureDeviceType.builtInTelephotoCamera, AVCaptureDeviceType.builtInWideAngleCamera], mediaType: AVMediaTypeVideo, position: AVCaptureDevicePosition.back)
-                //for device in devices {
-            for device in (deviceDiscoverySession?.devices)! {
-                if device.position == AVCaptureDevicePosition.back{
-                    do{
-                        let input = try AVCaptureDeviceInput(device : device as! AVCaptureDevice)
-                        if captureSession.canAddInput(input) {
-                            captureSession.addInput(input)
-                            captureSession.startRunning()
-                            sessionOutput.outputSettings = [AVVideoCodecKey : AVVideoCodecJPEG]
-                        
-                            if captureSession.canAddOutput(sessionOutput) {
-                                captureSession.addOutput(sessionOutput)
-                                previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-                                previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
-                                previewLayer.connection.videoOrientation = AVCaptureVideoOrientation.portrait
-                                cameraView.layer.addSublayer(previewLayer)
-                        }
-                        
-                    }
-                    
-                }
-                
-                catch {
-                    print("Error")
-                }
-                
-            }
-        }
-        
-        */
-        
         // Do any additional setup after loading the view, typically from a nib.
 
+        setupMenuBar()
     }
     
+    
+    let menuBar: MenuBar = {
+        let mb = MenuBar()
+        return mb
+    }()
+    
+    private func setupMenuBar(){
+        view.addSubview(menuBar)
+        //view.addConstraint("H:|[v0]|")
+        
+        //view.addConstraintsWithFormat("H: |[v0]|", views: menuBar)
+        //view.addConstraintsWithFormat("V: |[v0]|", views: menuBar)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
